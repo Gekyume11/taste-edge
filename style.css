@@ -89,7 +89,7 @@ li{
     transform: rotate(90deg);
 }
 #toggle:checked ~ label .hamburger .second{
-    opacity: 0;
+    display: none !important;
 }
 #toggle:checked ~ label .hamburger .first, #toggle:checked ~ label .hamburger .third{
     top: 35%;
