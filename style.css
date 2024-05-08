@@ -282,7 +282,7 @@ li{
 .footer .top-content i{
     transform: rotate(-45deg);
 }
-@media(min-width: 992px){/*------Scroll Animatiomn------*/
+@media(min-width: 992px){/*------Scroll Animation start------*/
     .main{height: 100dvh;scroll-snap-type: y mandatory;overflow-y: scroll !important;}.container-fluid{scroll-snap-align: start !important;}
     .footer{height: 100dvh;}
 }/*------Scroll Animation end------*/
