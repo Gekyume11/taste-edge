@@ -63,7 +63,7 @@ li{
     width: 24px;
     position: relative;
     cursor: pointer;
-    transition: .3s all;
+    transition: .4s all;
 }
 .header .hamburger .first, .second, .third{
     position: absolute;
