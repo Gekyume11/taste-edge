@@ -63,7 +63,7 @@ li{
     width: 24px;
     position: relative;
     cursor: pointer;
-    transition: .4s all;
+    transition: .1s all;
 }
 .header .hamburger .first, .second, .third{
     position: absolute;
@@ -84,9 +84,9 @@ li{
     right: 0;
 }
 #toggle:checked ~ label .hamburger{
-    -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg);
+    -webkit-transform: rotate(190deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 #toggle:checked ~ label .hamburger .second{
     opacity: 0;
