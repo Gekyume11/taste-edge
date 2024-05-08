@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+    font-family: 'ethnocentric rg';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ethnocentric rg'), url('ethnocentric rg.woff') format('woff');
+}
+*, a, .hero-content a{
+    font-family: 'ethnocentric rg', 'Poppins', sans-serif !important;
+}
+li{
+    list-style: none;
+}
+.bg-yellow{
+    background: #FFFF00 !important;
+}
+.bg-black{
+    background: #000 !important;
+}
+.text-yellow{
+    color: #FFFF00;
+}
+.border-yellow{
+    border: 1px solid #FFFF00 !important;
+}
+.border-black{
+    border: 2px solid #000 !important;
+}
+.top{
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.header{
+    height: 60px;
+    background-color: rgba(0, 0, 0, .2);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    position: relative;
+}
+.header label ul{
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    transition: .5s ease;
+}
+.header label ul li img{
+    width: 120px;
+}
+.header ul li span, a, .text-para, .text-para span, .edge-child p, .text-box h3, .text-contact, .footer-title{
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.header img{
+    width: 35%;
+}
+.header span i{
+    font-size: 26px;
+    cursor: pointer;
+}
+.header .hamburger{
+    height: 18px;
+    width: 24px;
+    position: relative;
+    cursor: pointer;
+}
+.header .hamburger .first, .second, .third{
+    position: absolute;
+    width: 24px;
+    height: 3px;
+    top: 0;
+    left: 0;
+    background: #fff;   
+    transition: .3s all;
+}
+.header .hamburger{
+    transition: .3s all;
+}
+.header .hamburger .second{
+    transform: translateY(8px);
+}
+.header .hamburger .third{
+    transform: translateY(16px); 
+}
+#toggle:checked ~ label ul{
+    right: 0;
+}
+#toggle:checked ~ label .hamburger{
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+#toggle:checked ~ label .hamburger .second{
+    opacity: 0;
+}
+#toggle:checked ~ label .hamburger .first, #toggle:checked ~ label .hamburger .third{
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, 50%) rotate(45deg);
+}
+#toggle:checked ~ label .hamburger .third{
+    left: 0;
+    top: 45%;
+    transform: rotate(-45deg);
+}
+.h-100vh{
+    height: 100dvh !important;
+}
+.header label img{
+    transform: skew(-15deg);
+}
+.hero, .mixer, .contact{
+    position: relative;
+    z-index: -1;
+}
+.hero video, .mixer video, .contact video{
+    position: absolute;
+    object-fit: cover ;
+    bottom: 0;
+    right: 0;
+}
+.hero-content, .mixer-text, .contact-text{
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    z-index: -1;
+}
+.hero-content a{
+    width: fit-content;
+    font-size: clamp(0.875rem, 0.8438rem + 0.1786vw, 1rem);
+}
+.hero-content span, .mixer-text span{
+    font-size: clamp(1.5625rem, 0.7656rem + 4.5536vw, 4.75rem);
+}
+.mixer-text{
+    right: 5%;
+    bottom: 5px ;
+    z-index: 1;
+}
+.text-sub-title{
+    font-family: 'Poppins', sans-serif !important;
+    position: relative;
+}
+.text-sub-title::after{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right:-15%;
+    content: '';
+    padding: 1px 10px;
+    background: #fff;
+}
+.text-sub-title-2::after{
+    background: #000;
+}
+.text-title, .edge-child h3, .text-box h3{
+    font-size: clamp(1.75rem, 1.5rem + 1.4286vw, 2.75rem);
+}
+.text-para{
+    font-size: clamp(1rem, 0.9063rem + 0.5357vw, 1.375rem);
+}
+.text-para-2{
+    font-size: clamp(0.875rem, 0.8438rem + 0.1786vw, 1rem);
+}
+.text-sub{
+    font-size: clamp(0.875rem, 0.625rem + 1.4286vw, 1.875rem);
+}
+.text-btn{
+    font-size: 12px !important;
+    letter-spacing: 2px;
+    z-index: 1;
+    position: relative;
+}
+.text-btn::before{
+    position: absolute;
+    content: '';
+    top: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1 ;
+    height: 55px;
+    width: 150px;
+    background: #000;
+    transition: .5s ease;
+}
+.text-btn-2::before{
+    background: #FFFF00;
+}
+.text-btn:hover::before{
+    width: 0;
+}
+.bg-1{
+    background-image: url(https://images.prismic.io/new-edge-energy-drink/ZiYhLfPdc1huKqup_regular-2-v1.jpg?auto=format%2Ccompress&rect=0%2C0%2C1920%2C1280&w=1920&h=1280);
+}
+.bg-2{
+    background-image: url(https://images.prismic.io/new-edge-energy-drink/ZiYhLvPdc1huKquq_sugar-free-2-v1.jpg?auto=format%2Ccompress&rect=0%2C0%2C1920%2C1280&w=1920&h=1280);
+}
+.bg-set{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.showcase{
+    padding: 220px 0;
+}
+.bg-3{
+    background-image: url(https://images.prismic.io/new-edge-energy-drink/ZiYhKfPdc1huKqul_original-v1.jpg?auto=format%2Ccompress&rect=0%2C0%2C960%2C1440&w=960&h=1440);
+}
+.bg-4{
+    background-image: url(https://images.prismic.io/new-edge-energy-drink/ZiYhL_Pdc1huKqus_zero-sugar-v1.jpg?auto=format%2Ccompress&rect=0%2C0%2C960%2C1440&w=960&h=1440);
+}.bg-5{
+    background-image: url(https://images.prismic.io/new-edge-energy-drink/ZiYhJfPdc1huKquh_flavors-v1.jpg?auto=format%2Ccompress&rect=0%2C0%2C960%2C1440&w=960&h=1440);
+}
+.edge-child, .text-box{
+    height: calc(100% - 60px);
+    background: rgba(0, 0, 0, .6);
+    transform: translateY(100px);
+    opacity: 0;
+    transition: .3s all ease-in-out;
+}
+.edge-parent:hover .edge-child, .text-box-parent:hover .text-box{
+    transform: translateY(59px);
+    opacity: 1;
+}
+.h-60{
+    height: 60px;
+    background: rgba(0, 0, 0, .5);
+}
+.slider-main, .sliderr-main{
+    position: relative;
+}
+.slider-main .items, .sliderr-main .itemss{
+    position: absolute;
+    transition: .5s;
+}
+.slider-main button, .sliderr-main button{
+    position: absolute;
+    width: fit-content;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background: none;
+    cursor: pointer;
+    outline: none;
+}
+.slider-main .slider-btn-2, .sliderr-main .slider-btn-2{
+    left: 95%;
+    transform: translate(-100%, -50%);
+}
+.text-box-parent{
+    position: relative;
+}
+.text-box{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.text-box-parent:hover .text-box{
+    transform: translateY(0);
+}
+.bg-6{
+    background-image: url(https://images.prismic.io/new-edge-energy-drink/ZiYonfPdc1huKqx__news-1-v1.jpg?auto=format%2Ccompress&rect=0%2C0%2C960%2C1280&w=960&h=1280);
+}
+.bg-7{
+    background-image: url(https://images.prismic.io/new-edge-energy-drink/ZiYonvPdc1huKqyA_news-2-v1.jpg?auto=format%2Ccompress&rect=0%2C0%2C960%2C1280&w=960&h=1280);
+}
+.bg-8{
+    background-image: url(https://images.prismic.io/new-edge-energy-drink/ZiYon_Pdc1huKqyB_news-3-v1.jpg?auto=format%2Ccompress&rect=0%2C0%2C960%2C1280&w=960&h=1280);
+}
+.bg-9{
+    background-image: url(https://images.prismic.io/new-edge-energy-drink/5af953b9-25b5-4613-b193-35c56dcd5a37_news-4.jpg?auto=compress,format&rect=0,0,960,1280&w=960&h=1280); 
+}
+.text-contact{
+    font-size: 14px;
+}
+.footer .top-content{
+    font-size: clamp(1.875rem, 0.9375rem + 5.3571vw, 5.625rem);
+}
+.footer .top-content .top-content-right{
+    color: #000;
+    -webkit-text-stroke: 0.04em #FFFF00;
+}
+.footer .top-content i{
+    transform: rotate(-45deg);
+}
+@media(min-width: 992px){/*------Scroll Animatiomn------*/
+    .main{height: 100dvh;scroll-snap-type: y mandatory;overflow-y: scroll !important;}.container-fluid{scroll-snap-align: start !important;}
+    .footer{height: 100dvh;}
+}/*------Scroll Animation end------*/

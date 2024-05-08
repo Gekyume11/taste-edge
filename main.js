@@ -1,0 +1,3 @@
+const slides=document.querySelectorAll(".items");var counter=0;slides.forEach((items,index)=>{items.style.left=`${index*100}%`;});const goPrev=()=>{if(counter!=0){counter--;slideItems();}};const goNext=()=>{if(counter<slides.length-1){counter++;slideItems();}};const slideItems=()=>{slides.forEach((items)=>{items.style.transform=`translateX(-${counter*100}%)`;});};
+const slidess=document.querySelectorAll(".itemss");var counterr = 0;slidess.forEach((itemss, index)=>{
+itemss.style.left=`${index*100}%`;});const goPrevv=()=>{if(counterr!=0){counterr--;slideItemss();}};const goNextt=()=>{if(counterr<slidess.length-1){counterr++;slideItemss();}};const slideItemss=()=>{slidess.forEach((itemss)=>{itemss.style.transform=`translateX(-${counterr*100}%)`;});};
